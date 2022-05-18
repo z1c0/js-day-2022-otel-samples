@@ -1,0 +1,20 @@
+{
+  "name": "wearedevs-js-day-otel",
+  "version": "1.0.0",
+  "description": "OpenTelemetry demos for the WeAreDevelopers JavaScript Day",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "z1c0",
+  "license": "ISC",
+  "dependencies": {
+    "@opentelemetry/api": "^1.0.2",
+    "@opentelemetry/exporter-jaeger": "0.25.0",
+    "@opentelemetry/resources": "0.25.0",
+    "@opentelemetry/semantic-conventions": "0.25.0",
+    "@opentelemetry/sdk-trace-node": "0.25.0",
+    "@opentelemetry/instrumentation": "0.25.0",
+    "@opentelemetry/instrumentation-http": "0.25.0"
+  }
+}
