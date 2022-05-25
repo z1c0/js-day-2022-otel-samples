@@ -12,7 +12,7 @@ const tracer = api.trace.getTracer('server');
 
 function main(nrOfJobs) {
   //
-  // Create our first (the main) span
+  // Create our first (the main) span (~ logical operation)
   //
   const mainSpan = tracer.startSpan('main');
   
@@ -35,6 +35,7 @@ function doWork(nr, parentSpan) {
   // Create child span with parent
   const ctx = api.trace.setSpan(api.context.active(), parentSpan);
   const childSpan = tracer.startSpan("doWork", undefined, ctx)
+  
   childSpan.setAttribute("worker-nr", nr);
 
   // simulate some random work.

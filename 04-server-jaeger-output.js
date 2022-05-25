@@ -11,7 +11,7 @@ const provider = new BasicTracerProvider({
   }),
 });
 // Add a SpanProcessor and an Exporter.
-provider.addSpanProcessor(new SimpleSpanProcessor(new ConsoleSpanExporter()));
+//provider.addSpanProcessor(new SimpleSpanProcessor(new ConsoleSpanExporter()));
 provider.addSpanProcessor(new SimpleSpanProcessor(new JaegerExporter()));
 
 // Initialize the OpenTelemetry APIs to use the BasicTracerProvider.

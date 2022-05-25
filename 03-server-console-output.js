@@ -1,8 +1,10 @@
 'use strict';
 
 const api = require('@opentelemetry/api');
+//
+// SDK
+//
 const { BasicTracerProvider, ConsoleSpanExporter, SimpleSpanProcessor } = require('@opentelemetry/sdk-trace-base');
-const { Resource } = require('@opentelemetry/resources');
 
 const provider = new BasicTracerProvider();
 
